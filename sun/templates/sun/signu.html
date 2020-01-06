@@ -1,0 +1,39 @@
+{% extends "sun/index.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+
+{% block content %}
+<form method="POST"   class="wpcf7-form" novalidate="novalidate" align="center">
+                    {% csrf_token %}
+                    {{form|crispy}}
+<!--      <div class="sc_form_details trx_addons_columns_wrap">
+    <div class="trx_addons_column-1_2"><label class="wpcf7-validates-as-required"><span class="wpcf7-form-control-wrap first-name">{{form.username}}<input type="text" size="40" class="wpcf7-form-control   placeholder="Name*" /></span></label>
+
+    </div>
+
+  <!--      <div class="trx_addons_column-1_2"><label class="wpcf7-validates-as-required"><span class="wpcf7-form-control-wrap first-name">{{form.username}}<input type="text" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*" /></span></label>
+
+        </div>
+        <div class="trx_addons_column-1_2"><label class="wpcf7-validates-as-required"><span class="wpcf7-form-control-wrap last-name"><input type="password" name="password1" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="password*" /></span></label>
+
+        </div>
+        <div class="trx_addons_column-1_2"><label class="wpcf7-validates-as-required"><span class="wpcf7-form-control-wrap phone"><input type="password" name="password2" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="repassword*" /></span></label>
+        </div>
+        <div class="trx_addons_column-1_2"><label class="wpcf7-validates-as-required"><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-mail*" /></span></label>
+        </div>
+
+    <!--    <div class="trx_addons_column-1"><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="4" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea></span>
+
+        </div>
+
+    </div> -->
+    <div class="sc_form_field_checkbox"><span class="wpcf7-form-control-wrap acceptance-334"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="acceptance-334" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I have read and agreed the Terms, Conditions and <a href="#">Privacy Policy</a>.</span></label></span></span></span>
+    </div>
+    <div class="form-submit"><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit sc_button sc_button_size_normal" />
+    </div>
+    <div class="wpcf7-response-output wpcf7-display-none">
+
+    </div></form>
+{% endblock content %}

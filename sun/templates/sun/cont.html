@@ -1,0 +1,36 @@
+
+{% extends "sun/index.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+
+{% block content %}
+
+<div class="card"  >
+  <img src="{% static 'sun/img/logo.png'%}" alt="Avatar" style="width:20%">
+  <div class="container">
+    <h3><b>Bharat Goswami</b></h3>
+    <p><h4>F&B Executive</h4>
+
+        <h5>+91 7290 052 333   <img src="{% static 'sun/img/download.jpeg'%}" alt="Avatar" style="width:10%" align='left'>
+</h5><br></br>
+<h5><a href="https://www.facebook.com/7sunmotels/"> Follow us on  Facebook   <img src="{% static 'sun/img/fb.jpeg'%}" alt="Avatar" style="width:10%" align='left'>
+</a></h5><br></br>
+<h5>Bharat.goswami@7sunmotel.com   <img src="{% static 'sun/img/images.jpeg'%}" alt="Avatar" style="width:10%" align='left'>
+</h5>
+<br></br>
+<h5><a href="https://www.google.com/maps/place/7+Sun+Motel+and+Resort/@28.7610621,77.0540673,17.51z/data=!4m8!1m2!3m1!2s7+Sun+Motel+and+Resort!3m4!1s0x0:0x34b850ee183b1714!8m2!3d28.7621605!4d77.055957">Near Rohini Heliport, Sector-36
+    Main Bawana Road, Delhi-110039  <img src="{% static 'sun/img/locat.jpeg'%}" alt="Avatar" style="width:10%" align='left'>
+
+</a></h5>
+
+
+
+      <h6><a href="https://www.7sunmotel.com">www.7sunmotel.com</a></h6>
+    </p>
+  </div>
+</div>
+
+
+{% endblock content %}
